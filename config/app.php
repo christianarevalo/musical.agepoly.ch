@@ -160,6 +160,7 @@ return [
          * External Service Providers
          */
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 
