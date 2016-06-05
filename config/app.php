@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,7 +108,7 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'single'),
+    'log' => env('APP_LOG', 'daily'),
 
     /*
     |--------------------------------------------------------------------------
@@ -156,6 +156,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * External Service Providers
+         */
+        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+
     ],
 
     /*
@@ -186,6 +191,7 @@ return [
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
         'Lang' => Illuminate\Support\Facades\Lang::class,
+        'LaravelLocalization'   => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
         'Password' => Illuminate\Support\Facades\Password::class,
