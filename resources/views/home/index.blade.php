@@ -8,7 +8,7 @@
                     <div class="panel-heading">Dashboard</div>
 
                     <div class="panel-body">
-                        You are logged in!
+                        <h1>Home</h1>
                         {{ locale() }}
                     </div>
                 </div>
